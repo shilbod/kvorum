@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Full Screen Search</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+<style>
+/* -------------------------------- 
+
+File#: _1_drop-cap
+Title: Drop Cap
+Descr: Make the first letter of a paragraph larger in size
+Usage: codyhouse.co/license
+
+-------------------------------- */
+/* variables */
+:root {
+  /* colors */
+  --dj0-color-primary-hsl: 250, 84%, 54%;
+  --dj0-color-bg-hsl: 0, 0%, 100%;
+  --dj0-color-contrast-high-hsl: 230, 7%, 23%;
+  --dj0-color-contrast-higher-hsl: 230, 13%, 9%;
+}
+
+/* component */
+:root {
+  --drop-cap-lines: 3;
+}
+
+.drop-cap::first-letter {
+  float: left;
+  line-height: 1;
+  font-size: calc(1em * var(--drop-cap-lines) * var(--dj0-body-line-height, 1.4));
+  padding: 0 0.125em 0 0;
+  text-transform: uppercase;
+  color: hsl(var(--dj0-color-contrast-higher-hsl));
+}
+
+.dj0-text-component .drop-cap::first-letter {
+  font-size: calc(1em * var(--drop-cap-lines) * var(--dj0-body-line-height, 1.4) * var(--line-height-multiplier));
+}
+</style>
+
+</head>
+<body>
+  <p class="drop-cap">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nisi corrupti est tempora molestias facilis ad in ea consequuntur beatae nemo, atque possimus dicta, distinctio commodi voluptate eum. Aliquam facere obcaecati assumenda quisquam accusamus, excepturi dignissimos, tempora tenetur impedit laboriosam illum pariatur iste? Enim, temporibus praesentium fuga, et, veniam voluptates illum nulla doloribus nemo mollitia excepturi ab possimus. Optio repellat aliquid, ratione sapiente et dolorem atque nostrum tenetur corrupti possimus quas quo qui mollitia incidunt dicta, vitae provident aperiam itaque.</p>
+
+</body>
+</html>
